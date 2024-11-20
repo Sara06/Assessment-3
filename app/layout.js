@@ -1,5 +1,19 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import '../public/assets/images/logo.png';
+import React from 'react';
+import '../public/assets/css/bootstrap-datepicker.css';
+import '../public/assets/css/bootstrap.css';
+import '../public/assets/css/bootstrap.min.css';
+import '../public/assets/css/font-awesome.css';
+import '../public/assets/css/font-awesome.min.css';
+import '../public/assets/css/font.css';
+import '../public/assets/css/owl.transitions.css';
+import '../public/assets/css/style.css';
+//import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import './assets/css/style.less';
+import  Header from '../components/Header';
+import  Navbar from '../components/Navbar';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,6 +35,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header />
+        <Navbar />
+       
         {children}
       </body>
     </html>
