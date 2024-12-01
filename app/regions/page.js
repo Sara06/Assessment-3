@@ -3,16 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { regions } from "../data/region";
 
-// Example region data
-const regions = [
-  { name: 'Sydney', location: 'New South Wales', imageUrl: 'http://placehold.it/760x670' },
-  { name: 'Melbourne', location: 'Victoria', imageUrl: 'http://placehold.it/760x670' },
-  { name: 'Brisbane', location: 'Queensland', imageUrl: 'http://placehold.it/760x670' },
-  { name: 'Perth', location: 'Western Australia', imageUrl: 'http://placehold.it/760x670' },
-  { name: 'Adelaide', location: 'South Australia', imageUrl: 'http://placehold.it/760x670' },
-  { name: 'Hobart', location: 'Tasmania', imageUrl: 'http://placehold.it/760x670' },
-];
 
 const Regions = () => {
   return (
