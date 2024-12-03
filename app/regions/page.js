@@ -18,7 +18,7 @@ const Regions = () => {
                 {regions.map((region, index) => (
                   <div key={index} className="item col-md-4">
                     <div className="image">
-                      <Link href={`/regions/${region.name.toLowerCase()}`}>
+                     <Link href={`/regions/${region.id}`}>
                         <h3>{region.name}</h3>
                         <span className="location">{region.location}</span>
                       </Link>
